@@ -47,7 +47,7 @@ def turn(board)
   input = gets.chomp
   index = input_to_index(input)
   if valid_move?(board, index) == true 
-    move(board, index)
+    move(board, index, char = "X")
   else
     puts "Please try again"
   end
